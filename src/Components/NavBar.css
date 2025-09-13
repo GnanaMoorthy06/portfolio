@@ -1,0 +1,482 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .logo img {
+    height: 50px; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  } */
+  
+
+  /* NavBar.css */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  .download-cv-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .download-cv-button a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .download-cv-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .download-cv-button:hover a {
+    color: black;
+  }
+   */
+
+
+
+
+
+
+
+
+   /* NavBar.css without media query */ 
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  .download-cv-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .download-cv-button a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .download-cv-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .download-cv-button:hover a {
+    color: black;
+  }
+  
+  .author-name {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif; 
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* NavBar.css */
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;    
+  }
+ 
+  .logo {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+   .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+  } 
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: black;
+      position: absolute;
+      top: 50px; 
+      left: 0;
+      padding: 10px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+  .download-cv-button {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-cv-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .download-cv-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .download-cv-button:hover a {
+    color: black;
+  } */
+  
+
+
+  /* ABOVE CSS IS GOOD UNTILL ITS NOT FIXED NAVBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    background: linear-gradient(90deg, #393737  , #0f0e0e);
+    color: white;
+    padding: 20px;
+    position: fixed; /* This will fix the navbar at the top */
+    top: 0; /* Align the navbar to the top of the page */
+    width: 100%; /* Make sure the navbar spans the full width */
+    z-index: 1000; /* Ensure the navbar stays above other content */
+  }
+
+  .logo {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-name {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 5px;
+  }
+
+   .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+  } 
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  .download-cv-button {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-cv-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .download-cv-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .download-cv-button:hover a {
+    color: black;
+  }

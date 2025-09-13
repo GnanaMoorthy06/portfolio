@@ -1,0 +1,201 @@
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    /* width: 30%; */
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .footer-newsletter h3, .footer-follow h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-newsletter input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-newsletter button {
+    padding: 10px;
+    background-color: #062f5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-icons i {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #062f5a;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+    position: relative; 
+  }
+
+
+
+@keyframes twist-effect {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+
+  .footer-icons i:hover {
+    animation: twist-effect 0.8s ease-in-out;
+  }
+
+
+  @media only screen and (max-width: 599px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-newsletter input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo-followme {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 800px; 
+      margin-bottom: 20px; 
+    }
+  
+    .footer-logo {
+      flex: 1;
+    }
+  
+    .footer-followme {
+      flex: 1;
+      text-align: right; 
+    }
+  
+    .footer-newsletter {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .footer-column {
+      width: 30%;
+    }
+  
+    .footer-newsletter input {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    /* .footer-column {
+      width: 30%;
+    } */
+
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .footer-column {
+      
+      flex: 1; /* Allow columns to grow equally */
+      text-align: center; /* Center the text for better alignment */
+    }
+  
+    .footer-column.footer-newsletter input[type="email"] {
+      width: 70%; /* Adjusted width for better appearance */
+    }
+
+
+    .footer-followme {
+      margin-left: 10%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
