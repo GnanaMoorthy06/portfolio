@@ -1,0 +1,45 @@
+.scrolling-text-container {
+    margin: 20px 0;
+  }
+  
+  .scroll-text-right-to-left,
+  .scroll-text-left-to-right {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px 0; /* Spacing between the two scrolls */
+  }
+  
+  .scroll-text-right-to-left span,
+  .scroll-text-left-to-right span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 46px; /* Increase text size */
+    letter-spacing: 2px; /* Optional: adds space between characters */
+  }
+  
+  .scroll-text-right-to-left span {
+    animation: scrollRightToLeft 20s linear infinite; /* Slower speed */
+  }
+  
+  .scroll-text-left-to-right span {
+    animation: scrollLeftToRight 20s linear infinite; /* Slower speed */
+  }
+  
+  @keyframes scrollRightToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scrollLeftToRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  

@@ -1,0 +1,327 @@
+.Education-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+}
+
+.left-edu {
+    flex: 4;
+  }
+
+  .education-image {
+    width: 100%;
+    height: 120vh;
+    border-radius: 20px;
+  }
+
+
+  .right-edu {
+    flex: 3;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+  }
+
+  .Edu-title {
+    font-size: 1rem;
+    text-align: left;
+   margin-top: 10px;
+    color: #555;
+  }
+
+  .Edu-subtitle {
+    color: #3f3d3d;
+    font-size: 3.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .Edu-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .edu-item {
+    display: flex;
+    /* align-items: flex-start; */
+    margin-bottom: 20px;
+
+    align-items: center;
+    width: 100%;
+  }
+
+  .edu-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .edu-logo {
+    width: 120px;
+    height: 70px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+    /* margin-top: 30px; */
+    margin-right: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .edu-logo:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .Edu-details{
+    text-align: left;
+
+    flex:1;
+  }
+
+
+
+  .Edu-details h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .Edu-details p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #272626;
+  }
+  
+  .Edu-details span {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #868686;
+  }
+  .Edu-details h6 {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    color: #524848;
+  }
+
+   /* @media only screen and (max-width: 599px) {
+    .about-page {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .left-sides,
+    .right-sides {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .personal-details {
+      margin-left: 10px;
+      flex-direction: column;
+    }
+  
+    .lefts-details,
+    .rights-details {
+      margin-left: 30px;
+      text-align: start;
+      width: 100%;
+      margin-bottom: 1px;
+    }
+    .download-cv {
+      top: 88%;    
+    }
+  } */
+  
+  @media only screen and (max-width: 599px) {
+    .Education-page {
+      margin-left: 30px;
+      flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-edu  {
+        order: 1;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20px;
+    }
+
+  .right-edu {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    .Education-page {
+      margin-left: 30px;
+      flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-edu  {
+        order: 1;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20px;
+    }
+
+  .right-edu {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .edu-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .edu-logo {
+        width: 100px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .Edu-details h4 {
+        font-size: 1.2rem;
+    }
+
+    .Edu-details p, .Edu-details span {
+        font-size: 0.9rem;
+    }
+
+    .education-image {
+        width: 100%;
+        height: 80vh;
+      margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .Education-page {
+        flex-direction: row;
+        padding: 15px;
+    }
+    .education-image {
+        width: 100%;
+        height: 100vh;
+      margin-bottom: 20px;
+    }
+    .left-edu {
+        order: 1;
+        width: 100%;
+       margin-top: 0;
+    }
+
+    .right-edu {
+        order: 2;
+        width: 100%;
+        margin: 20px;
+        padding: 15px;
+    }
+    .Edu-title {
+        font-size: 0.9rem;
+        text-align: left;
+       margin-top: 10px;
+        color: #555;
+      }
+      
+      .Edu-subtitle  {
+        color: #3f3d3d;
+        font-size: 2.5rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+      
+      .Edu-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+    .edu-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .edu-logo {
+        width: 110px;
+        height: 75px;
+        margin-right: 15px;
+    }
+
+    .Edu-details h4 {
+        font-size: 1rem;
+    }
+
+    .Edu-details p, .Edu-details span {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+    .Education-page {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .left-edu {
+        flex: 4;
+        margin-top: 0;
+    }
+
+    .right-edu {
+        flex: 3;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .edu-item {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    .edu-logo {
+        width: 120px;
+        height: 70px;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+
+    .Edu-details h4 {
+        font-size: 1.4rem;
+    }
+
+    .Edu-details p, .Edu-details span {
+        font-size: 1.1rem;
+    }
+}

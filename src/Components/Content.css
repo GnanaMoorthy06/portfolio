@@ -1,0 +1,472 @@
+/* .new-page {
+    background-color: #d0e9f17e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:nth-child(2n) {
+    transform: translateY(20px); 
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .card:hover {
+    animation: shake 0.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(0);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+  
+ 
+@media (max-width: 768px) {
+    .cards {
+        margin-top: 40%;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+
+    .card-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .card-row {
+        flex-direction: column; 
+        align-items: center;
+      }
+  
+    .card {
+      width: 60%; 
+      margin-bottom: 20px; 
+    }
+  
+    .card .logo {
+      font-size: 1rem; 
+    }
+  
+    .card-title {
+      font-size: 0.8rem; 
+    }
+  
+    .card-description {
+      font-size: 0.5rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards{
+        margin-top: 50%;
+    }
+    .card {
+      width: 60%; 
+      margin-bottom: px;
+    }
+  
+    .card .logo {
+      font-size: 1rem; 
+    }
+  
+    .card-title {
+      font-size: 0.8rem; 
+    }
+  
+    .card-description {
+      font-size: 0.5rem; 
+    }
+  }
+  
+
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* .cards-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: lightblue;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 22%; 
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 1024px) {
+    .cards-page {
+      justify-content: center;
+    }
+  
+    .card {
+      flex: 1 1 45%;
+      margin: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+      max-width: 90%;
+      margin: 15px auto;
+    }
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:nth-child(odd) {
+    transform: translateY(-20px); 
+}
+
+.card:nth-child(even) {
+    transform: translateY(20px); 
+}
+
+.card:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        transform: translateY(0); 
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(143, 203, 223, 0.527);
+    min-height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing between cards */
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Restrict the maximum width to maintain layout */
+    margin: 100px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Make sure four cards fit in one line */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    height: 80vh;
+}
+
+.card:nth-child(odd) {
+    transform: translateY(-30px); /* Slightly up */
+}
+
+.card:nth-child(even) {
+    transform: translateY(30px); /* Slightly down */
+}
+
+.card:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+.card-logo{
+    font-size: 100px;
+}
+.card-title{
+    font-size: 30px;
+}
+.card-description{
+    font-size: 20px;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 6rem;
+    font-weight: bold;
+} */
+@media (max-width: 1700px){
+  .card{
+    height: 80vh;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px){
+  .card{
+    height: 85vh;
+  }
+}
+@media (max-width: 1046px) and (min-width: 760px) {
+    /* .card {
+        height: max-content;
+        width: 70%;
+        margin-bottom: 20px;
+    } */
+    .card {
+      height: max-content;
+        width: calc(50% - 20px); /* Adjust card width for medium screens */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+
+    .card-container {
+        justify-content: space-around; /* Adjust spacing for medium screens */
+    }
+
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        transform: translateY(0); /* Remove offset on medium screens */
+    }
+    .card-logo{
+        font-size: 70px;
+    }
+   
+    .card-title{
+        font-size: 20px;
+    }
+    .card-description{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+    
+    .card {
+        /* margin-left: 40px; */
+        height: max-content;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        transform: translateY(0); /* Remove offset on small screens */
+    }
+    .card-logo{
+        font-size: 80px;
+    }
+   
+    .card-title{
+        font-size: 24px;
+    }
+    .card-description{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+    .card {
+        height: max-content;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+   
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        transform: translateY(0); /* Remove offset on small screens */
+    }
+    .card-logo{
+        font-size: 60px;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-description{
+        font-size: 14px;
+    }
+}

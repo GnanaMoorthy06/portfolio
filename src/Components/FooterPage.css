@@ -1,0 +1,285 @@
+/* Basic styles for footer
+.footer-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    margin: 10px;
+  }
+  
+  Logo and Copyright styles
+  .footer-logo h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+  }
+  
+  Newsletter styles
+  .footer-newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .newsletter-input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .newsletter-input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .footer-newsletter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  Follow Me styles
+  .footer-follow h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: rotate(360deg);
+  }
+    
+  @media (max-width: 599px) {
+    .footer-container {
+      flex-direction: column;
+    }
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    .footer-container {
+      flex-direction: column;
+    }
+    .footer-logo, .footer-follow {
+      display: inline-block;
+      width: 48%;
+      text-align: left;
+    }
+    .footer-newsletter {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .footer-column {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .footer-container {
+      flex-direction: row;
+    }
+    .footer-column {
+      width: 30%;
+      text-align: left;
+    }
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Basic styles for footer */
+.footer-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  margin: 10px;
+}
+
+/* Logo and Copyright styles */
+.footer-logo h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+}
+
+/* Newsletter styles */
+.footer-newsletter h3 {
+  margin-bottom: 10px;
+}
+
+.newsletter-input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.newsletter-input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.newsletter-input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-newsletter button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #062f5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Follow Me styles */
+.footer-follow h3 {
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #062f5a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.icon:hover {
+  transform: rotate(360deg);
+}
+
+/* Responsive Design */
+
+/* Small screens (up to 599px) */
+@media (max-width: 599px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium screens (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .footer-logo, .footer-follow {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    vertical-align: top;
+  }
+  .footer-newsletter {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Large screens (900px to 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .footer-column {
+    width: 30%;
+  }
+}
+
+/* Extra large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+  }
+  .footer-column {
+    width: 30%;
+    text-align: left;
+  }
+}

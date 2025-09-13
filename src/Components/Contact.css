@@ -1,0 +1,360 @@
+.contact-page {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .contact-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .contact-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact-left, .contact-right {
+    width: 48%;
+  }
+  
+  .contact-left .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .contact-left i {
+    font-size: 16px; /* Adjust the icon size */
+    color: white; /* Icon color */
+    background-color: #062f5a; /* Blue background */
+    border-radius: 50%; /* Make the background circular */
+    padding: 15px; /* Add padding inside the circle */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  /* .contact-left i {
+    font-size: 24px;
+    color: #007BFF; 
+    line-height: 1;
+    margin-right: 15px;
+  } */
+  /* .contact-left i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #083361; 
+
+    line-height: 1;
+    font-family: 'Font Awesome 5 Solid'; Always use solid icons
+    transition: transform 0.3s ease, color 0.3s ease; Smooth transition for transform and color
+  } */
+  
+  /* .contact-left i:hover {
+    transform: translateX(3px) rotate(2deg); Slight shake movement on hover
+    color: #0056b3; Change color slightly
+} */
+.contact-left i:hover {
+    animation: shake 0.5s;
+  }
+  /* Example of shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+/* Switch to solid icons on hover */
+/* .contact-left i:hover:before {
+    font-family: 'Font Awesome 5 Solid'; Use solid version of Font Awesome icons
+} */
+
+  .contact-left h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .contact-left p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .form-row input{
+    width: 48%;
+  }
+  .form-row input, .form-row textarea {
+   
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+  } */
+
+  textarea {
+    /* width: 100%; */
+    height: 250px; /* Set a larger height to accommodate more content */
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+  /* button {
+    padding: 12px 20px;
+    background-color: #083361; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  } */
+  
+  .contact-page .contact-btn {
+    padding: 12px 20px;
+    background-color: #062f5a; 
+    /* background-color: #007BFF; */
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    position: relative;
+    overflow: hidden; /* To keep the animation within the button */
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-page .contact-btn:hover {
+    background-color: #074881 !important;
+
+    color: white !important;
+  }
+
+  .contact-page .contact-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* top: -150%; */
+    left: -150%;
+    width: 150%;
+    height: 100%;
+    /* width: 300%;
+    height: 300%; */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent line */
+    z-index: 0;
+    transform: rotate(45deg); /* Rotate the pseudo-element to make it diagonal */
+    transition: all 0.5s ease;
+}
+
+.contact-page .contact-btn:hover:before {
+    /* left: 100%; */
+
+    left: 150% !important;
+    top: 150% !important;
+}
+  
+ 
+  @media only screen and (max-width: 599px) {
+    .contact-page {
+        margin-top: 20%;
+      }
+    .contact-body {
+      flex-direction: column;
+    }
+ 
+    .contact-left, .contact-right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-row input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    /* textarea {
+        width: 100%;
+      } */
+
+      textarea {
+        height: 300px; /* Increase height for smaller screens */
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    /* .contact-body {
+      flex-direction: column;
+    }
+   */
+   .contact-body {
+        
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .contact-left{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact-right {
+    width: 80%;
+  }
+  .form-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-row input {
+    width: 48%;
+  }
+
+  textarea {
+      width: 100%;
+      height: 200px;
+  }
+
+
+
+
+
+/* 
+    .contact-left, .contact-right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-row input {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+    } */
+  }
+  
+  /* Width 900px to 1199px */
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+
+    .contact-page {
+       margin-top: 10%;
+      }
+    .contact-body {
+        
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact-left, .contact-right {
+      width: 48%;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .form-row input {
+      width: 48%;
+    }
+  
+    /* textarea {
+      width: 100%;
+    } */
+    textarea {
+        width: 100%;
+        height: 200px;
+        /* height: 400px; Adjust for larger screens */
+    }
+  }
+  
+  /* Width 1200px to 1799px */
+  @media only screen and (min-width: 1200px) and (max-width: 1799px) {
+    .contact-page {
+      padding: 30px;
+    }
+  
+    .contact-left, .contact-right {
+      width: 48%;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .form-row input {
+      width: 48%;
+    }
+  
+    /* textarea {
+      width: 100%;
+    } */
+
+    textarea {
+        width: 100%;
+        height: 300px;
+        /* height: 450px; Adjust for desktops */
+    }
+  }
+
+  @media only screen and (min-width: 1800px) {
+    textarea {
+        width: 100%;
+        height: 350px;
+        /* height: 500px; Extra height for ultra-wide screens */
+    }
+}
