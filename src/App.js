@@ -93,21 +93,21 @@ function App() {
     <>
       <NavBar />
       <HomePage1 />
-      <Content />
+      {/* <Content />
       <About />
       <Experience />
       <Education />
       <ScrollText />
       <Skills />
-      <Contact />
+      <Contact /> */}
       {/* <Footer /> */}
-      <FooterPage />
+      {/* <FooterPage /> */}
 
-      {showArrow && (
+      {/* {showArrow && (
         <div className="scroll-to-top" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faArrowUp} size="2x" />
         </div>
-      )}
+      )} */}
     </>
   );
 }
