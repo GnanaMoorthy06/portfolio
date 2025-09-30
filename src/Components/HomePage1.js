@@ -115,7 +115,7 @@ const HomePage = () => {
       <div className="name-container">
         <AutoAwesomeIcon className="glow-icon top" />
         {/* <h2 className="name homepage-content slide-in">Gnana <span className="different-font">Moorthy</span></h2> */}
-        <h2 className="name homepage-content slide-in">Gnana <span className="different-font">Moorthy</span></h2>
+        <h2 className="name homepage-content slide-in">Gnana <span className="different-font">Morthy</span></h2>
         <AutoAwesomeIcon className="glow-icon bottom" />
       </div>
       <h3 className="description homepage-content slide-in">
